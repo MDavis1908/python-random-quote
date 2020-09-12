@@ -6,8 +6,8 @@ def primary():
   f = open("quotes.txt")
   quotes = f.readlines()
   f.close()
-  #newLine = open("quotes.txt", 'a')
-  #newLine.write("This is a new Quote")
+  newLine = open("quotes.txt", 'a')
+  newLine.write("This is a new Quote")
   last = len(quotes) -1
   rnd = random.randint(0, last)
   print(quotes[rnd])
